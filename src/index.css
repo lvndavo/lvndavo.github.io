@@ -2,3 +2,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-darkestBlue
+    }
+}
+
+@keyframes animateNavLink {
+    from {
+        letter-spacing: normal;
+    }
+    to {
+        letter-spacing: 0.1em;
+    }
+}
+
+.nav-item:hover {
+    animation: 0.8s infinite alternate animateNavLink;
+}
