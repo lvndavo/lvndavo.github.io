@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react";
+import { Nav, Hero, About, Projects, Skills, Contact } from "./components";
 
 function App() {
   const blobRef = useRef(null);
@@ -22,34 +23,19 @@ function App() {
         ref={blobRef}
         id="cursorBlob"
         className={`rounded-full bg-offWhite w-[150px] h-[150px] 
-          opacity-40 blur-2xl fixed pointer-events-none z-[999]`}
+          opacity-30 blur-2xl fixed pointer-events-none z-[999] hidden sm:block`}
       />
+      <div className="flex flex-col h-screen">
+        <div className="sticky top-0">
+          <Nav />
+        </div>
+        <Hero />
+      </div>
       <div>
-        <ul
-          className="list-none font-playfair text-offWhite text-end text-[4rem] 
-          lowercase italic font-bold mx-5 nav"
-        >
-          <li>
-            <a href="#about" className="nav-item">
-              About Me
-            </a>
-          </li>
-          <li>
-            <a href="#projects" className="nav-item">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#skills" className="nav-item">
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="nav-item">
-              Contact Me
-            </a>
-          </li>
-        </ul>
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
       </div>
     </>
   );

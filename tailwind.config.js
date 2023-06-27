@@ -5,7 +5,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        pink: "#FF99C0",
         lightPink: "#FFADCD",
         yellow: "#FAE373",
         lightYellow: "#FCEFB0",
@@ -16,6 +15,7 @@ export default {
       },
       fontFamily: {
         playfair: ["Playfair", "serif"],
+        josefinsans: ["Josefin Sans", "sans serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
