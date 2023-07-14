@@ -5,8 +5,11 @@ import logo from "../assets/logo.png";
 const Nav = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   return (
-    <nav className="w-full px-6 py-2 flex justify-between items-center bg-darkBlue bg-opacity-20 border-b-[1px] border-offWhite">
-      <img src={logo} className="w-[170px]" />
+    <nav
+      className="w-[95%] fixed top-5 px-6 py-2 rounded-xl flex justify-between bg-green500 
+    bg-opacity-90 border-[1px] border-offWhite"
+    >
+      <img src={logo} className="w-[120px]" />
       <div>
         <ul
           className="sm:flex hidden justify-between list-none font-josefinsans text-offWhite text-[1.5rem] 
@@ -26,6 +29,7 @@ const Nav = () => {
           ))}
         </ul>
       </div>
+
       <div className="sm:hidden flex flex-1 items-center justify-end">
         <button
           onClick={() => {
@@ -36,7 +40,7 @@ const Nav = () => {
         </button>
         <div
           className={`${menuToggle ? "flex" : "hidden"} 
-          bg-black rounded-xl absolute top-[4.5rem] right-0 p-5 bg-opacity-50
+          bg-black rounded-xl absolute top-[4.5rem] right-0 p-5 bg-opacity-70
           mx-4`}
         >
           <ul

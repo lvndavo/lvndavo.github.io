@@ -3,16 +3,18 @@ import me from "../assets/me.jpg";
 const About = () => (
   <section
     id="about"
-    className="px-12 py-10 h-screen flex flex-col items-center"
+    className="px-12 py-12 md:pt-16 h-screen flex flex-col justify-center items-center"
   >
-    <h1 className="font-josefinsans text-offWhite font-bold text-5xl mb-10">
-      About Me
-    </h1>
-    <div className="flex items-center px-12">
-      <div className="flex-1 p-3 flex justify-center">
+    <div className="mb-5">
+      <h1 className="font-josefinsans text-offWhite font-bold text-5xl">
+        About Me
+      </h1>
+    </div>
+    <div className="flex items-center px-10">
+      <div className="px-5 flex justify-center">
         <img src={me} className="h-[350px] rounded-full" />
       </div>
-      <div className="flex-1 flex flex-col font-josefinsans text-offWhite text-lg">
+      <div className="flex-1 flex flex-col font-josefinsans text-offWhite text-lg px-5">
         <p className="">
           Consequat voluptate officia nostrud velit mollit dolor duis ullamco
           consequat irure ipsum. Magna non magna proident ea. Adipisicing dolore

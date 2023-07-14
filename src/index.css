@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply bg-darkestBlue
+    body, html {
+        @apply bg-darkestBrown
     }
 }
 
@@ -19,6 +19,15 @@
     }
 }
 
+@keyframes bounce {
+    0% {transform: translateY(0);} 
+   100% {transform: translateY(-30px);} 
+}
+
 .nav-item:hover {
     animation: 0.8s infinite alternate animateNavLink;
+}
+
+.down-arrow {
+    animation: 1s infinite alternate bounce;
 }

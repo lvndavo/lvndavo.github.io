@@ -23,15 +23,11 @@ function App() {
         ref={blobRef}
         id="cursorBlob"
         className={`rounded-full bg-offWhite w-[150px] h-[150px] 
-          opacity-30 blur-2xl fixed pointer-events-none z-[999] hidden sm:block`}
+          opacity-20 blur-2xl fixed pointer-events-none z-[999] hidden sm:block`}
       />
-      <div className="flex flex-col h-screen">
-        <div className="sticky top-0">
-          <Nav />
-        </div>
+      <div className="flex flex-col items-center">
+        <Nav />
         <Hero />
-      </div>
-      <div>
         <About />
         <Projects />
         <Skills />

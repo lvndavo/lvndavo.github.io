@@ -6,12 +6,15 @@ export default {
     extend: {
       colors: {
         lightPink: "#FFADCD",
-        yellow: "#FAE373",
         lightYellow: "#FCEFB0",
         offWhite: "#F7EDE2",
         blue: "#475D85",
         darkBlue: "#3A4B69",
         darkestBlue: "#161C27",
+        green500: "#455D30",
+        green400: "#628245",
+        green300: "#80A75B",
+        darkestBrown: "#251F1A",
       },
       fontFamily: {
         playfair: ["Playfair", "serif"],
