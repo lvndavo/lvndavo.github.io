@@ -25,12 +25,12 @@ function App() {
         className={`rounded-full bg-offWhite w-[150px] h-[150px] 
           opacity-20 blur-2xl fixed pointer-events-none z-[999] hidden sm:block`}
       />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center w-full overflow-hidden gap-4">
         <Nav />
         <Hero />
         <About />
-        <Projects />
         <Skills />
+        <Projects />
         <Contact />
       </div>
     </>

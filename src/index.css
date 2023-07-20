@@ -8,14 +8,8 @@
     body, html {
         @apply bg-darkestBrown
     }
-}
-
-@keyframes animateNavLink {
-    from {
-        letter-spacing: normal;
-    }
-    to {
-        letter-spacing: 0.1em;
+    .section-heading {
+        @apply md:text-5xl lg:text-6xl text-[2.75rem] leading-9 font-bold
     }
 }
 
@@ -24,10 +18,14 @@
    100% {transform: translateY(-30px);} 
 }
 
+.nav-item {
+    transition: letter-spacing 500ms;
+}
 .nav-item:hover {
-    animation: 0.8s infinite alternate animateNavLink;
+    letter-spacing: 0.1em;
+    transition: letter-spacing 700ms;
 }
 
 .down-arrow {
-    animation: 1s infinite alternate bounce;
+    animation: 700ms infinite alternate bounce;
 }

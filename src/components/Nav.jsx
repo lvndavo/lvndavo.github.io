@@ -7,28 +7,28 @@ const Nav = () => {
   return (
     <nav
       className="w-[95%] fixed top-5 px-6 py-2 rounded-xl flex justify-between bg-green500 
-    bg-opacity-90 border-[1px] border-offWhite"
+    bg-opacity-95 border-[1px] border-offWhite z-50"
     >
-      <img src={logo} className="w-[120px]" />
-      <div>
-        <ul
-          className="sm:flex hidden justify-between list-none font-josefinsans text-offWhite text-[1.5rem] 
-          lowercase font-bold mt-3"
-        >
-          {navLinks.map((link, i) => (
-            <li key={link.id}>
-              <a
-                href={`#${link.id}`}
-                className={`${
-                  i === navLinks.length - 1 ? "mr-0" : "mr-5"
-                } nav-item`}
-              >
-                {link.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <a href="/">
+        <img src={logo} className="w-[120px]" alt="Linda Vo logo" />
+      </a>
+      <ul
+        className="sm:flex hidden justify-between items-center list-none font-josefinsans text-offWhite text-[1.5rem] 
+          lowercase font-bold"
+      >
+        {navLinks.map((link, i) => (
+          <li key={link.id}>
+            <a
+              href={`#${link.id}`}
+              className={`${
+                i === navLinks.length - 1 ? "mr-0" : "mr-5"
+              } nav-item`}
+            >
+              {link.title}
+            </a>
+          </li>
+        ))}
+      </ul>
 
       <div className="sm:hidden flex flex-1 items-center justify-end">
         <button
@@ -40,8 +40,8 @@ const Nav = () => {
         </button>
         <div
           className={`${menuToggle ? "flex" : "hidden"} 
-          bg-black rounded-xl absolute top-[4.5rem] right-0 p-5 bg-opacity-70
-          mx-4`}
+          bg-green500 rounded-xl absolute top-[4.5rem] right-0 p-5 bg-opacity-90
+          mx-4 border-offWhite border-[1px]`}
         >
           <ul
             className="list-none flex flex-col text-offWhite font-josefinsans

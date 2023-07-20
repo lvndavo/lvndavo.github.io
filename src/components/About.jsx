@@ -3,16 +3,16 @@ import me from "../assets/me.jpg";
 const About = () => (
   <section
     id="about"
-    className="px-12 py-12 md:pt-16 h-screen flex flex-col justify-center items-center"
+    className="min-h-screen md:p-12 flex flex-col justify-center items-center"
   >
-    <div className="mb-5">
-      <h1 className="font-josefinsans text-offWhite font-bold text-5xl">
+    <div className="flex items-end">
+      <h1 className="section-heading font-josefinsans text-offWhite font-bold">
         About Me
       </h1>
     </div>
-    <div className="flex items-center px-10">
-      <div className="px-5 flex justify-center">
-        <img src={me} className="h-[350px] rounded-full" />
+    <div className="flex lg:flex-row flex-col items-center sm:px-10">
+      <div className="sm:px-5 flex justify-center">
+        <img src={me} className="lg:w-[350px] w-[200px] rounded-full" />
       </div>
       <div className="flex-1 flex flex-col font-josefinsans text-offWhite text-lg px-5">
         <p className="">
