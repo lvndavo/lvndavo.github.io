@@ -18,7 +18,8 @@ export default {
       },
       fontFamily: {
         playfair: ["Playfair", "serif"],
-        josefinsans: ["Josefin Sans", "sans serif"],
+        josefinsans: ["Josefin Sans", "sans-serif"],
+        satoshi: ["Satoshi", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

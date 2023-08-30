@@ -4,9 +4,9 @@ import { ArrowDown } from "../constants";
 const Hero = () => (
   <section
     id="hero"
-    className="h-screen md:p-12 flex flex-col items-center justify-center text-center gap-4"
+    className="section h-screen md:p-12 flex flex-col items-center justify-center text-center gap-4"
   >
-    <h1 className="section-heading text-offWhite font-josefinsans mt-5 md:mt-0 md:mx-5">
+    <h1 className="title text-offWhite font-josefinsans mt-5 md:mt-0 md:mx-5">
       Hi there! <br className="md:hidden" /> I'm{" "}
       <span className="text-green300">Linda.</span>
     </h1>

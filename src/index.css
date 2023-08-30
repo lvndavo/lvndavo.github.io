@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('../src/assets/satoshi.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,10 +10,17 @@
         @apply bg-darkestBrown
     }
     .section-heading {
-        @apply md:text-5xl lg:text-6xl text-[2.75rem] leading-9 font-bold drop-shadow-lg
+        @apply drop-shadow-lg font-josefinsans
     }
-    section {
+    .title {
+        @apply md:text-4xl lg:text-5xl text-[2.75rem] leading-9 font-semibold drop-shadow-lg font-josefinsans text-offWhite
+
+    }
+    .section {
         @apply bg-gradient-radial from-[#43363b] to-darkestBrown via-[#2f2626] w-full
+    }
+    .body-text {
+        @apply font-satoshi
     }
 }
 
@@ -48,4 +56,9 @@ nav, .contact-button {
 }
 .contact-button:hover {
     filter: drop-shadow(0px 0px 4px hsl(0, 0%, 80%));
+}
+.image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
