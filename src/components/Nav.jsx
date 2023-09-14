@@ -7,8 +7,7 @@ const Nav = () => {
   return (
     <nav
       id="navbar"
-      className="w-[70%] fixed top-5 px-6 py-2 rounded-full flex justify-between items-center bg-green500 
-    bg-opacity-95 border-[1px] border-offWhite z-50"
+      className="w-[70%] fixed top-5 px-6 py-2 rounded-full flex justify-between items-center bg-primary border-[1px] border-offWhite z-50"
     >
       <a href="#">
         <img src={logo} className="w-[120px] logo" alt="Linda Vo logo" />
@@ -34,7 +33,7 @@ const Nav = () => {
         </button>
         <div
           className={`${menuToggle ? "flex" : "hidden"} 
-          bg-green500 rounded-xl absolute top-[4.5rem] right-0 p-5 bg-opacity-90
+          bg-primary rounded-3xl absolute top-[4.5rem] right-0 p-5 bg-opacity-90
           mx-4 border-offWhite border-[1px]`}
         >
           <ul

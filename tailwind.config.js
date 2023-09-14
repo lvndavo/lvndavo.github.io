@@ -5,16 +5,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightPink: "#FFADCD",
-        lightYellow: "#FCEFB0",
         offWhite: "#F7EDE2",
-        blue: "#475D85",
-        darkBlue: "#3A4B69",
-        darkestBlue: "#161C27",
-        green500: "#455D30",
-        green400: "#628245",
-        green300: "#80A75B",
         darkestBrown: "#251F1A",
+        primary: "#628245",
+        secondary: "#e0e9d4",
+        background: "#251F1A",
+        text: "#e6dbcc",
+        accent: "#91bc66",
       },
       fontFamily: {
         playfair: ["Playfair", "serif"],

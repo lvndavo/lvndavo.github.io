@@ -10,17 +10,17 @@
         @apply bg-darkestBrown
     }
     .section-heading {
-        @apply drop-shadow-lg font-josefinsans
+        @apply drop-shadow-lg font-josefinsans text-[2.5rem] font-semibold
     }
     .title {
-        @apply md:text-4xl lg:text-5xl text-[2.75rem] leading-9 font-semibold drop-shadow-lg font-josefinsans text-offWhite
+        @apply md:text-4xl lg:text-5xl text-[2.75rem] leading-9 font-semibold drop-shadow-lg font-josefinsans text-text
 
     }
     .section {
         @apply bg-gradient-radial from-[#43363b] to-darkestBrown via-[#2f2626] w-full
     }
     .body-text {
-        @apply font-satoshi
+        @apply font-satoshi drop-shadow-md md:text-[1.1rem] text-[1rem] font-light
     }
 }
 
@@ -33,7 +33,7 @@ nav {
 }
 nav > * {
     user-select: none;
-    filter: drop-shadow(0px 0px 4px hsl(0, 0%, 80%));
+    filter: drop-shadow(0px 0px 4px hsl(0, 0%, 25%));
 }
 .logo {
     flex-shrink: 2;
@@ -49,16 +49,11 @@ nav > * {
 }
 .down-arrow {
     animation: 700ms infinite alternate bounce;
-    filter: drop-shadow(0px 0px 4px hsl(0, 0%, 80%));
+    filter: drop-shadow(0px 0px 4px hsl(0, 0%, 70%));
 }
 nav, .contact-button {
     filter: drop-shadow(0px 5px 8px hsl(27, 17%, 10%));
 }
 .contact-button:hover {
-    filter: drop-shadow(0px 0px 4px hsl(0, 0%, 80%));
-}
-.image {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    filter: drop-shadow(0px 0px 17px hsl(88, 38%, 70%));
 }

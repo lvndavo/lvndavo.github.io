@@ -37,7 +37,7 @@ function App() {
       <div
         ref={blobRef}
         id="cursorBlob"
-        className={`rounded-full bg-lightPink w-[200px] h-[200px] 
+        className={`rounded-full bg-secondary w-[200px] h-[200px] 
           opacity-20 blur-3xl fixed pointer-events-none z-[999] hidden sm:block`}
       />
       <div className="flex flex-col items-center w-full overflow-hidden">

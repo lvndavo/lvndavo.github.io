@@ -1,28 +1,27 @@
-import me from "../assets/me.jpg";
 import "../index.css";
 
 const About = () => (
-  <section
-    id="about"
-    className="section min-h-screen md:p-12 p-4 flex justify-center"
-  >
-    <div className="max-w-4xl">
-      <div className="">
-        <div className="bg-offWhite p-6 rounded-xl drop-shadow-xl relative">
-          <h2 className="section-heading text-black text-5xl">About Me</h2>
-        </div>
-        <div>
-          {/* <img src={me} alt="Linda Vo" className="image rounded-3xl" /> */}
-        </div>
-      </div>
-      <div className="bg-offWhite p-6 rounded-xl drop-shadow-xl">
-        <p className="body-text text-darkestBlue font-light">
-          Nisi ut do amet fugiat culpa nisi id ad nulla. Mollit minim dolor eu
-          anim consectetur ea culpa et. Id culpa aliquip mollit laborum tempor
-          in est consectetur mollit laboris consectetur. Reprehenderit qui
-          cupidatat aute aliqua consequat esse elit magna ex deserunt aliqua do.
-        </p>
-      </div>
+  <section id="about">
+    <div
+      className="bg-primary bg-opacity-50 transition-opacity duration-100 
+    flex flex-col gap-5 rounded-3xl drop-shadow-lg
+    md:px-10 md:py-12 md:mx-12 p-6 mx-5"
+    >
+      <h2 className="section-heading text-center leading-tight px-4 text-secondary">
+        About Me
+      </h2>
+      <p className="body-text text-secondary md:px-8">
+        My name is <span className="font-semibold">Linda (she/her)</span>.
+        Growing up as an only child with a constant curiosity for
+        problem-solving and tinkering, I naturally fell in love with software
+        development during my undergrad at UC Irvine. I am passionate about
+        combining creative design and engineering to produce{" "}
+        <span className="font-semibold">human-centered solutions</span>.
+      </p>
+      <p className="body-text text-secondary md:px-8">
+        When I am not coding, you will likely find me secondhand shopping,
+        gymming, or cooking!
+      </p>
     </div>
   </section>
 );
