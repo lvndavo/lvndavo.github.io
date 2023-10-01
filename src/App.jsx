@@ -3,7 +3,7 @@ import { Nav, Hero, About, Projects, Skills, Contact } from "./components";
 
 function App() {
   const blobRef = useRef(null);
-  var lastScrollY = 0;
+  // var lastScrollY = 0;
 
   useEffect(() => {
     const onMouseMove = (event) => {
@@ -13,22 +13,22 @@ function App() {
         clientY - blobRef.current.getBoundingClientRect().height / 2;
       blobRef.current.style.transform = `translate(${blobX}px, ${blobY}px)`;
     };
-    const onScroll = (event) => {
-      let currentScrollY = window.scrollY || document.documentElement.scrollTop;
-      if (currentScrollY >= 0) {
-        if (currentScrollY > lastScrollY) {
-          document.getElementById("navbar").style.transform =
-            "translate(0,-200px)";
-        } else if (currentScrollY < lastScrollY) {
-          document.getElementById("navbar").style.transform = "translate(0,0)";
-        }
-        lastScrollY = currentScrollY;
-      }
-    };
+    // const onScroll = (event) => {
+    //   let currentScrollY = window.scrollY || document.documentElement.scrollTop;
+    //   if (currentScrollY >= 0) {
+    //     if (currentScrollY > lastScrollY) {
+    //       document.getElementById("navbar").style.transform =
+    //         "translate(0,-200px)";
+    //     } else if (currentScrollY < lastScrollY) {
+    //       document.getElementById("navbar").style.transform = "translate(0,0)";
+    //     }
+    //     lastScrollY = currentScrollY;
+    //   }
+    // };
 
     if (typeof window != "undefined") {
       window.addEventListener("mousemove", onMouseMove);
-      window.addEventListener("scroll", onScroll);
+      // window.addEventListener("scroll", onScroll);
     }
   }, []);
 
@@ -37,8 +37,8 @@ function App() {
       <div
         ref={blobRef}
         id="cursorBlob"
-        className={`rounded-full bg-secondary w-[200px] h-[200px] 
-          opacity-20 blur-3xl fixed pointer-events-none z-[999] hidden sm:block`}
+        className={`rounded-full bg-text w-[250px] h-[250px] 
+          opacity-10 blur-3xl fixed pointer-events-none z-[999] hidden sm:block`}
       />
       <div className="flex flex-col items-center w-full overflow-hidden">
         <Nav />

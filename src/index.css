@@ -1,26 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,400;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url('../src/assets/satoshi.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
     body, html {
-        @apply bg-darkestBrown
+        @apply bg-background
     }
     .section-heading {
-        @apply drop-shadow-lg font-josefinsans text-[2.5rem] font-semibold
+        @apply font-young_serif sm:text-3xl text-2xl font-bold uppercase
     }
     .title {
-        @apply md:text-4xl lg:text-5xl text-[2.75rem] leading-9 font-semibold drop-shadow-lg font-josefinsans text-text
-
+        @apply text-4xl sm:text-5xl xl:text-6xl leading-9 drop-shadow-lg font-young_serif text-text
     }
     .section {
-        @apply bg-gradient-radial from-[#43363b] to-darkestBrown via-[#2f2626] w-full
+        @apply bg-gradient-radial from-secondary to-background w-full
     }
     .body-text {
-        @apply font-satoshi drop-shadow-md md:text-[1.1rem] text-[1rem] font-light
+        @apply font-josefinsans md:text-2xl text-xl font-medium
+    }
+    .column:nth-child(2) {
+        @apply border-text border-r-[1px] border-l-[1px]
+    }
+    .column {
+        @apply sm:px-10 sm:py-8 px-8 py-6 flex flex-col
     }
 }
 
@@ -51,9 +56,9 @@ nav > * {
     animation: 700ms infinite alternate bounce;
     filter: drop-shadow(0px 0px 4px hsl(0, 0%, 70%));
 }
-nav, .contact-button {
+.contact-button {
     filter: drop-shadow(0px 5px 8px hsl(27, 17%, 10%));
 }
 .contact-button:hover {
-    filter: drop-shadow(0px 0px 17px hsl(88, 38%, 70%));
+    filter: drop-shadow(0px 0px 25px #bc6549);
 }
