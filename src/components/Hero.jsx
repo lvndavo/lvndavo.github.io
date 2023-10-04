@@ -5,7 +5,7 @@ import { HiPaperAirplane } from "react-icons/hi2";
 const Hero = () => (
   <section
     id="hero"
-    className="section h-screen md:p-12 flex flex-col items-center justify-center text-center gap-4"
+    className="gradient-section h-screen md:p-12 flex flex-col items-center justify-center text-center gap-4"
   >
     <h1 className="title text-text mt-5 md:mt-0 md:mx-5">
       Hi there, <br className="md:hidden" /> I'm{" "}

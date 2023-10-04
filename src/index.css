@@ -15,17 +15,34 @@
     .title {
         @apply text-4xl sm:text-5xl xl:text-6xl leading-9 drop-shadow-lg font-young_serif text-text
     }
-    .section {
+    .gradient-section {
+        @apply bg-gradient-radial from-background to-secondary w-full
+    }
+    .reverse-gradient-section {
         @apply bg-gradient-radial from-secondary to-background w-full
     }
     .body-text {
         @apply font-josefinsans md:text-2xl text-xl font-medium
     }
     .column:nth-child(2) {
-        @apply border-text border-r-[1px] border-l-[1px]
+        @apply border-text md:border-l-[1px] md:border-t-transparent 
+        border-t-[1px] max-md:border-l-transparent 
     }
     .column {
-        @apply sm:px-10 sm:py-8 px-8 py-6 flex flex-col
+        @apply sm:px-10 sm:py-8 px-8 py-6 flex flex-col text-text items-center gap-10
+    }
+    .skill-item {
+        @apply relative flex justify-center hover:translate-y-1 transition-all duration-100 ease-linear
+    }
+    .skill-logo {
+        @apply  h-auto max-w-[5rem] min-w-[3rem] drop-shadow-lg object-contain brightness-110
+    }
+    .heading-with-icon {
+        @apply flex items-center justify-center gap-3 mb-5
+    }
+    .tooltip {
+        @apply absolute top-[-2rem] p-2 min-w-max scale-0
+        bg-background/80 text-text text-center rounded-xl font-bold text-sm shadow-sm
     }
 }
 

@@ -1,3 +1,21 @@
+import {
+  html,
+  css,
+  javascript,
+  typescript,
+  python,
+  java,
+  cpp,
+  mysql,
+  react,
+  tailwind,
+  angular,
+  node,
+  nextjs,
+  express,
+  git,
+} from "../assets";
+
 export const navLinks = [
   {
     id: "about",
@@ -46,3 +64,85 @@ export const ArrowDown = () => (
     />
   </svg>
 );
+
+export const skills = {
+  languages: [
+    {
+      id: "html",
+      title: "HTML",
+      src: html,
+    },
+    {
+      id: "css",
+      title: "CSS",
+      src: css,
+    },
+    {
+      id: "javascript",
+      title: "Javascript",
+      src: javascript,
+    },
+    {
+      id: "typescript",
+      title: "Typescript",
+      src: typescript,
+    },
+    {
+      id: "python",
+      title: "Python",
+      src: python,
+    },
+    {
+      id: "java",
+      title: "Java",
+      src: java,
+    },
+    {
+      id: "cpp",
+      title: "C++",
+      src: cpp,
+    },
+    {
+      id: "mysql",
+      title: "MySQL",
+      src: mysql,
+    },
+  ],
+  other: [
+    {
+      id: "react",
+      title: "React",
+      src: react,
+    },
+    {
+      id: "angular",
+      title: "Angular",
+      src: angular,
+    },
+    {
+      id: "nextjs",
+      title: "Next.js",
+      src: nextjs,
+    },
+    {
+      id: "tailwind",
+      title: "Tailwind CSS",
+      src: tailwind,
+    },
+    {
+      id: "node",
+      title: "Node.js",
+      src: node,
+    },
+    {
+      id: "express",
+      title: "Express",
+      src: express,
+    },
+    {
+      id: "git",
+      title: "Git",
+      src: git,
+    },
+  ],
+};

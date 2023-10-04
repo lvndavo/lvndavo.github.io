@@ -10,7 +10,7 @@ const Nav = () => {
       className="w-[70%] fixed top-5 px-6 py-2 rounded-full flex justify-between items-center 
       bg-primary border-[1px] border-text z-50 drop-shadow-lg"
     >
-      <a href="#">
+      <a href="/">
         <img src={logo} className="w-[120px] logo" alt="Linda Vo logo" />
       </a>
       <ul
