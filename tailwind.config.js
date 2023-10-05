@@ -4,15 +4,6 @@ export default {
   mode: "jit",
   theme: {
     extend: {
-      // colors: {
-      //   offWhite: "#F7EDE2",
-      //   darkestBrown: "#251F1A",
-      //   primary: "#49573c",
-      //   secondary: "#2f3c23",
-      //   background: "#251F1A",
-      //   text: "#e6dbcc",
-      //   accent: "#ee6aa4",
-      // },
       colors: {
         offWhite: "#F7EDE2",
         primary: "#3b362a",
