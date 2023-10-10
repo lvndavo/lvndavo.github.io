@@ -23,7 +23,7 @@ const Skills = () => {
               </h3>
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-1 sm:gap-4 justify-center">
               {skills.languages.map((language) => (
                 <div key={language.id} className="skill-item group">
                   <img
@@ -46,7 +46,7 @@ const Skills = () => {
                 Libraries, Frameworks, Tools
               </h3>
             </div>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-1 sm:gap-4 justify-center">
               {skills.other.map((skill) => (
                 <div key={skill.id} className="skill-item group">
                   <img

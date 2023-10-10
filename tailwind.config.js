@@ -6,15 +6,14 @@ export default {
     extend: {
       colors: {
         offWhite: "#F7EDE2",
-        primary: "#3b362a",
+        primary: "#57392e",
         secondary: "#283421",
         background: "#3f4b34",
         text: "#f3e2d8",
-        accent: "#bc6549",
+        accent: "#c16a4d",
       },
       fontFamily: {
         josefinsans: ["Josefin Sans", "sans-serif"],
-        rubik: ["Rubik", "sans-serif"],
         young_serif: ["Young Serif", "serif"],
       },
       backgroundImage: {

@@ -1,9 +1,8 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import { Nav, Hero, About, Projects, Skills, Contact } from "./components";
 
 function App() {
   const blobRef = useRef(null);
-  // var lastScrollY = 0;
 
   useEffect(() => {
     const onMouseMove = (event) => {
@@ -13,22 +12,9 @@ function App() {
         clientY - blobRef.current.getBoundingClientRect().height / 2;
       blobRef.current.style.transform = `translate(${blobX}px, ${blobY}px)`;
     };
-    // const onScroll = (event) => {
-    //   let currentScrollY = window.scrollY || document.documentElement.scrollTop;
-    //   if (currentScrollY >= 0) {
-    //     if (currentScrollY > lastScrollY) {
-    //       document.getElementById("navbar").style.transform =
-    //         "translate(0,-200px)";
-    //     } else if (currentScrollY < lastScrollY) {
-    //       document.getElementById("navbar").style.transform = "translate(0,0)";
-    //     }
-    //     lastScrollY = currentScrollY;
-    //   }
-    // };
 
     if (typeof window != "undefined") {
       window.addEventListener("mousemove", onMouseMove);
-      // window.addEventListener("scroll", onScroll);
     }
   }, []);
 

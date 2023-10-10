@@ -15,6 +15,7 @@ import {
   express,
   git,
 } from "../assets";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export const navLinks = [
   {
@@ -34,36 +35,6 @@ export const navLinks = [
     title: "Contact Me",
   },
 ];
-
-export const HamburgerIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className="w-8 h-8 text-offWhite"
-  >
-    <path
-      fillRule="evenodd"
-      d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-      clipRule="evenodd"
-    />
-  </svg>
-);
-
-export const ArrowDown = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className="w-8 h-8 text-offWhite"
-  >
-    <path
-      fillRule="evenodd"
-      d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-      clipRule="evenodd"
-    />
-  </svg>
-);
 
 export const skills = {
   languages: [
@@ -146,3 +117,34 @@ export const skills = {
     },
   ],
 };
+
+export const projects = [
+  {
+    id: "YSS",
+    title: "Youth Spiritual Summit Platform",
+    description:
+      "A full-stack web app supporting 3 primary users: highschool youth, parents, and summit administrators.",
+    tags: ["React", "MySQL", "Node.js", "GCP"],
+  },
+  {
+    id: "CLEANRS",
+    title: "CLEANRS: A Needs-Conscious Food Platform",
+    description: "",
+    tags: ["React Native"],
+  },
+];
+
+export const socialLinks = [
+  {
+    id: "linkedin",
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/linda-vo-9a5b541b8/",
+    icon: <BsLinkedin />,
+  },
+  {
+    id: "github",
+    title: "Github",
+    link: "https://github.com/lvndavo",
+    icon: <BsGithub />,
+  },
+];
