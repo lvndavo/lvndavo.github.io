@@ -6,29 +6,32 @@
 
 @layer base {
     body, html {
-        @apply bg-background
+        @apply bg-lightGreen-500
+    }
+}
+
+@layer components {
+    .title {
+        @apply text-5xl xl:text-6xl drop-shadow-xl font-young_serif text-cream
     }
     .section-heading {
         @apply font-young_serif sm:text-3xl text-2xl font-bold uppercase drop-shadow-md
     }
-    .title {
-        @apply text-5xl xl:text-6xl drop-shadow-xl font-young_serif text-text
-    }
     .gradient-section {
-        @apply bg-gradient-radial from-[#4d5c3f] via-background to-secondary w-full
+        @apply bg-gradient-radial from-[#4d5c3f] via-lightGreen-500 to-darkGreen-600 w-full
     }
     .reverse-gradient-section {
-        @apply bg-gradient-radial from-secondary to-background w-full
+        @apply bg-gradient-radial from-darkGreen-600 to-lightGreen-500 w-full
     }
     .body-text {
         @apply font-josefinsans md:text-2xl text-xl font-medium
     }
     .column:nth-child(2) {
-        @apply border-text md:border-l-[1px] md:border-t-transparent 
+        @apply border-cream md:border-l-[1px] md:border-t-transparent 
         border-t-[1px] max-md:border-l-transparent 
     }
     .column {
-        @apply sm:p-8 p-6 flex flex-col text-text items-center gap-5 sm:gap-10
+        @apply sm:p-8 p-6 flex flex-col text-cream items-center gap-5 sm:gap-10
     }
     .skill-item {
         @apply relative flex justify-center hover:translate-y-1 transition-all duration-100 ease-linear
@@ -37,19 +40,23 @@
         @apply w-[100px] h-[100px] max-w-[4rem] sm:max-w-[5rem] min-w-[3rem] drop-shadow-lg object-contain brightness-110
     }
     .heading-with-icon {
-        @apply flex items-center justify-center gap-3 mb-5
+        @apply flex items-center justify-center gap-2 mb-5 drop-shadow-sm
     }
     .tooltip {
         @apply absolute top-[-2rem] p-2 min-w-max scale-0
-        bg-background/80 text-text text-center rounded-xl font-bold text-sm shadow-sm
+        bg-lightGreen-500/80 text-cream text-center rounded-xl font-bold text-sm shadow-sm
     }
     .project-card {
-        @apply bg-gradient-radial from-accent to-text rounded-xl
-        drop-shadow-lg text-center hover:cursor-pointer text-2xl font-young_serif text-text
-        flex flex-col justify-center gap-2 max-w-[30rem] min-w-fit p-5 sm:p-8
+        @apply bg-gradient-radial from-accentOrange-200 to-accentOrange-100 rounded-xl
+        text-xl sm:text-2xl font-young_serif text-white drop-shadow-lg shadow-inner
+        hover:cursor-pointer hover:scale-x-105 transition-all duration-200
+        flex flex-col justify-center gap-2 p-5 sm:p-8
     }
     .tag {
-        @apply text-sm font-josefinsans bg-green-900/60 rounded-full px-2 py-1 text-text
+        @apply text-sm font-josefinsans bg-lightGreen-400/90 rounded-full px-2 py-1 text-cream
+    }
+    .input {
+        @apply rounded-xl px-4 py-2 font-normal drop-shadow-sm shadow-inner w-full font-young_serif
     }
 }
 
@@ -86,8 +93,9 @@ nav > * {
 .contact-button:hover {
     filter: drop-shadow(0px 0px 25px #c16a4d);
 }
+.send-button:hover {
+    filter: drop-shadow(0px 0px 10px #3f4b34);
+}
 .social-link:hover {
-    /* color: #c16a4d; */
-    filter: drop-shadow(0px 0px 15px #c16a4d);
-    transition: all 350ms;
+    filter: drop-shadow(0px 0px 25px #3f4b34);
 }

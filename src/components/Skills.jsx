@@ -6,10 +6,10 @@ const Skills = () => {
   return (
     <section id="skills">
       <div
-        className="bg-accent rounded-3xl drop-shadow-xl
+        className="bg-accentOrange-300 shadow-inner rounded-3xl drop-shadow-xl
         md:pt-12 md:pb-10 sm:pt-8 sm:pb-6 pt-6 pb-4 max-md:px-7 mx-10 sm:mx-24"
       >
-        <div className="heading-with-icon text-text">
+        <div className="heading-with-icon text-cream">
           <FaToolbox size="25" />
           <h2 className="section-heading">Skills</h2>
         </div>

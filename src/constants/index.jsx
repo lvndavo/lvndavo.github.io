@@ -120,10 +120,17 @@ export const skills = {
 
 export const projects = [
   {
-    id: "YSS",
-    title: "Youth Spiritual Summit Platform",
+    id: "YSS2",
+    title: "Youth Spiritual Summit Platform (2.0)",
     description:
-      "A full-stack web app supporting 3 primary users: highschool youth, parents, and summit administrators.",
+      "A redesign, reimplementation, and optimization of the old vanilla React YSS application.",
+    tags: ["Next.js", "Prisma", "Tailwind", "React"],
+  },
+  {
+    id: "YSS1",
+    title: "Youth Spiritual Summit Platform (1.0)",
+    description:
+      "A full-stack React application backed by a RESTful API supporting 3 primary users: highschool youth, parents, and summit administrators.",
     tags: ["React", "MySQL", "Node.js", "GCP"],
   },
   {

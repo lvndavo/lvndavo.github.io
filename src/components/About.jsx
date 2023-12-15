@@ -2,9 +2,9 @@ import "../index.css";
 import { FaStar } from "react-icons/fa";
 
 const About = () => (
-  <section id="about" className="bg-secondary">
+  <section id="about" className="bg-darkGreen-600">
     <div
-      className="bg-text text-background rounded-t-[3rem]
+      className="bg-cream text-lightGreen-500 rounded-t-[3rem]
     sm:px-12 sm:py-10 px-8 py-8 mb-[-22%]"
     >
       <div className="mb-[25%]">
