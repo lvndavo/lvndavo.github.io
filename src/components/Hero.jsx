@@ -22,9 +22,9 @@ const Hero = () => (
     </div>
     <div className="py-4">
       <div
-        className="contact-button font-young_serif text-cream font-semibold uppercase text-xl border border-cream 
-        bg-transparent rounded-full hover:cursor-pointer hover:bg-accentOrange-300 hover:border-accentOrange-300 
-        transition-all duration-200 py-4 px-5"
+        className="contact-button font-young_serif text-cream font-semibold uppercase text-xl outline outline-1 outline-cream 
+        bg-transparent rounded-full hover:cursor-pointer hover:bg-accentOrange-300 hover:outline-accentOrange-300
+        transition-all duration-100 py-4 px-5 relative"
       >
         <a href="#contact" className="flex gap-3 items-center">
           Contact Me <HiPaperAirplane />

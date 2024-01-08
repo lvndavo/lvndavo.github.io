@@ -31,7 +31,7 @@
         border-t-[1px] max-md:border-l-transparent 
     }
     .column {
-        @apply sm:p-8 p-6 flex flex-col text-cream items-center gap-5 sm:gap-10
+        @apply px-5 flex flex-col text-cream items-center gap-5 sm:gap-10
     }
     .skill-item {
         @apply relative flex justify-center hover:translate-y-1 transition-all duration-100 ease-linear
@@ -47,10 +47,10 @@
         bg-lightGreen-500/80 text-cream text-center rounded-xl font-bold text-sm shadow-sm
     }
     .project-card {
-        @apply bg-gradient-radial from-accentOrange-200 to-accentOrange-100 rounded-xl
-        text-xl sm:text-2xl font-young_serif text-white drop-shadow-lg shadow-inner
+        @apply bg-cream rounded-xl
+        text-xl sm:text-2xl font-young_serif text-accentOrange-800 drop-shadow-lg shadow-inner
         hover:cursor-pointer hover:scale-x-105 transition-all duration-200
-        flex flex-col justify-center gap-2 p-5 sm:p-8
+        flex flex-col justify-center gap-2 p-5 sm:p-8 relative overflow-hidden
     }
     .tag {
         @apply text-sm font-josefinsans bg-lightGreen-400/90 rounded-full px-2 py-1 text-cream
@@ -87,9 +87,6 @@ nav > * {
     animation: 700ms infinite alternate bounce;
     filter: drop-shadow(0px 0px 4px hsl(0, 0%, 70%));
 }
-.contact-button {
-    filter: drop-shadow(0px 5px 8px hsl(27, 17%, 10%));
-}
 .contact-button:hover {
     filter: drop-shadow(0px 0px 25px #c16a4d);
 }
@@ -98,4 +95,43 @@ nav > * {
 }
 .social-link:hover {
     filter: drop-shadow(0px 0px 25px #3f4b34);
+}
+
+.project-card:nth-child(1)::before {
+    content: "";
+    width: 40rem;
+    height: 30rem;
+    background: radial-gradient( rgb(174, 102, 182), rgb(222, 115, 66), transparent, transparent);
+    filter: blur(3rem);
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    right: -5%;
+    transform: rotate(20deg);
+}
+
+.project-card:nth-child(2)::before {
+    content: "";
+    width: 45rem;
+    height: 30rem;
+    background: radial-gradient( rgb(174, 102, 182), rgb(222, 115, 66), transparent, transparent);
+    filter: blur(3.2rem);
+    position: absolute;
+    z-index: -1;
+    bottom: -40%;
+    left: 10%;
+    transform: rotate(-45deg);
+}
+
+.project-card:nth-child(3)::before {
+    content: "";
+    width: 45rem;
+    height: 30rem;
+    background: radial-gradient( rgb(174, 102, 182), rgb(222, 115, 66), transparent, transparent);
+    filter: blur(3.2rem);
+    position: absolute;
+    z-index: -1;
+    top: -40%;
+    right: 8%;
+    transform: rotate(5deg);
 }

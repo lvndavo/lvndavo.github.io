@@ -12,7 +12,7 @@ const Projects = () => {
         <h2 className="section-heading text-cream text-center">Projects</h2>
       </div>
 
-      <div className="md:px-12">
+      <div className="md:px-14">
         {projects.map((project) => (
           <div key={project.id} className="project-card w-full mb-5">
             <h3 className="drop-shadow-md text-left mb-1">{project.title}</h3>

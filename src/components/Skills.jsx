@@ -7,7 +7,7 @@ const Skills = () => {
     <section id="skills">
       <div
         className="bg-accentOrange-300 shadow-inner rounded-3xl drop-shadow-xl
-        md:pt-12 md:pb-10 sm:pt-8 sm:pb-6 pt-6 pb-4 max-md:px-7 mx-10 sm:mx-24"
+        md:p-10 sm:p-8 p-6 max-md:px-7 mx-10 sm:mx-24"
       >
         <div className="heading-with-icon text-cream">
           <FaToolbox size="25" />
@@ -22,7 +22,6 @@ const Skills = () => {
                 Languages
               </h3>
             </div>
-
             <div className="flex flex-wrap gap-1 sm:gap-4 justify-center">
               {skills.languages.map((language) => (
                 <div key={language.id} className="skill-item group">
