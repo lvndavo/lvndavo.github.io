@@ -23,8 +23,8 @@ function App() {
       <div
         ref={blobRef}
         id="cursorBlob"
-        className={`rounded-full bg-text w-[250px] h-[250px] 
-          opacity-10 blur-3xl fixed pointer-events-none z-[999] hidden sm:block`}
+        className={`rounded-full bg-accentOrange-100 w-[250px] h-[250px] 
+          opacity-10 blur-2xl fixed pointer-events-none z-[999] hidden sm:block`}
       />
       <div className="flex flex-col items-center w-full overflow-hidden">
         <Nav />
