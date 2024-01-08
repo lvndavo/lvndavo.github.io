@@ -24,20 +24,20 @@
         @apply bg-gradient-radial from-darkGreen-600 to-lightGreen-500 w-full
     }
     .body-text {
-        @apply font-josefinsans md:text-2xl text-xl font-medium
+        @apply font-josefinsans text-lg md:text-xl lg:text-2xl font-medium
     }
     .column:nth-child(2) {
         @apply border-cream md:border-l-[1px] md:border-t-transparent 
         border-t-[1px] max-md:border-l-transparent 
     }
     .column {
-        @apply px-5 flex flex-col text-cream items-center gap-5 sm:gap-10
+        @apply p-5 flex flex-col text-cream items-center gap-3 sm:gap-5
     }
     .skill-item {
         @apply relative flex justify-center hover:translate-y-1 transition-all duration-100 ease-linear
     }
     .skill-logo {
-        @apply w-[100px] h-[100px] max-w-[4rem] sm:max-w-[5rem] min-w-[3rem] drop-shadow-lg object-contain brightness-110
+        @apply w-[100px] h-[100px] max-w-[3.5rem] sm:max-w-[4.5rem] min-w-[3rem] drop-shadow-lg object-contain brightness-110
     }
     .heading-with-icon {
         @apply flex items-center justify-center gap-2 mb-5 drop-shadow-sm
